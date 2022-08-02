@@ -1,0 +1,84 @@
+.admin-body {
+  margin-left: 250px;
+  width: 82%;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+  }
+
+  &__user {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-right: 5rem;
+
+    & div {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+
+  &__hero {
+    padding: 2rem 0;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    button {
+      font-weight: 500;
+      font-size: 16cpx;
+      line-height: 20px;
+
+      color: #193951;
+
+      opacity: 0.4;
+
+      background: none;
+      border: none;
+    }
+
+    .contained {
+      background: #016bff;
+      border-radius: 50px;
+      opacity: 1;
+      color: white;
+      padding: 1rem 1rem;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    padding-left: 0;
+    padding-top: 1rem;
+    margin-left: 2rem;
+  }
+
+  &__cases {
+    width: 80%;
+
+    h3 {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 13px;
+
+      color: #193951;
+      margin-top: 2rem;
+      margin-left: 2rem;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 2rem;
+    padding-bottom: 15px;
+    margin-right: 2rem;
+    border-bottom: 1px solid #ccd7df;
+  }
+}

@@ -1,0 +1,24 @@
+.hero {
+  background: linear-gradient(265.48deg, #095acd 33.12%, #006aff 84.7%);
+
+  padding-top: 90px;
+  padding-bottom: 140px;
+
+  &__title {
+    margin: 0;
+    padding: 0;
+    max-width: 900px;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 79px;
+    text-align: center;
+    color: #ffffff;
+    text-align: center;
+  }
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+}
