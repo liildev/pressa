@@ -13,6 +13,7 @@ import search from "../../assets/img/admin/search.png";
 import { ReactComponent as Notification } from "../../assets/svg/notif.svg";
 import io from "socket.io-client";
 import AdminCase from "../AdminCase/AdminCase";
+import { useSelector } from "react-redux";
 
 const socket = io.connect(process.env.REACT_APP_API);
 
@@ -59,6 +60,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 export default function AdminBody() {
   const [btnEvt, setBtnEvt] = useState("undefined");
   const [posts, setPosts] = useState();
+  const { user } = useSelector((state) => state.auth);
 
   useEffect(() => {
     socket.on(`get_undefined_posts`, (data) => {
@@ -84,7 +86,7 @@ export default function AdminBody() {
             <Notification />
             <div>
               <Avatar alt="Travis Howard" src="https://picsum.photos/200" />
-              <h3>Abbos Janizakov</h3>
+              <h3>{user.data?.username}</h3>
             </div>
           </div>
         </div>

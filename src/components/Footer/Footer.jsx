@@ -13,8 +13,8 @@ export default function Footer() {
         <Logo/>
         <nav className='footer__nav'>
           <ul className='footer__list'>
-            <li className='footer__item'><Link to='/'>Biz haqimizda</Link></li>
-            <li className='footer__item'><Link to='/'>Savol va Javoblar</Link></li>
+            <li className='footer__item'><Link to='/pressa/about'>Biz haqimizda</Link></li>
+            <li className='footer__item'><Link to='/pressa'>Savol va Javoblar</Link></li>
           </ul>
           <img src={tel} alt='img'/>
           <img src={fav} alt='img'/>

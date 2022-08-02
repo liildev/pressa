@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Navigate to="/pressa" replace />} />
+        <Route path="/" element={<Navigate to="/login" replace />} />
         <Route path="/pressa/*" element={<Dashboard />}>
           <Route index element={<Home />} />
           <Route path="single" element={<Single />} />

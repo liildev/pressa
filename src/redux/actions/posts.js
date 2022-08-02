@@ -22,9 +22,10 @@ export const addPost = (creatorName, creatorProfession, creatorTel, creatorTel2,
   api().post('/post', postFomDate).then(res => {
     dispatch(postSlice.actions.setAddedPost(res.data));
     alert(res.data.message);
-    history.push('/');
+
+    history.push('/pressa');
   }).catch(err => {
     alert(err?.response?.data.message);
-    history.push('/');
+    history.push('/pressa');
   });
 };

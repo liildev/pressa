@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 export default function AdminNav() {
   return (
     <div className="admin">
-      <Link to='/'><Logo /></Link>
+      <Link to='/pressa'><Logo /></Link>
       <ul className="admin__list">
         <li className="admin__item">
           <Link to="/home">

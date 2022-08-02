@@ -6,12 +6,23 @@ import { adminLogin } from "../../redux/actions/auth";
 import { ReactComponent as Logo } from "../../assets/svg/Pressa.svg";
 import account from "../../assets/img/main/account.png";
 import lock from "../../assets/img/main/lock.png";
+import { useNavigate } from "react-router";
 
 export default function Login() {
   const [username, setUsername] = useState();
   const [password, setPassword] = useState();
   const dispatch = useDispatch();
+  const navigate = useNavigate()
   const { login, user } = useSelector((state) => state.auth);
+
+  if (user.data?.role === "USER") {
+    navigate("/pressa");
+  }
+
+  if (user.data?.role === "ADMIN") {
+    navigate("/admin");
+  }
+
 
   const handleClick = () => {
     dispatch(adminLogin(username, password));
