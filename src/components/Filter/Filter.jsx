@@ -3,8 +3,6 @@ import "./_styles.scss";
 import { Autocomplete, TextField } from "@mui/material";
 import { DesktopDatePicker, LocalizationProvider } from "@mui/x-date-pickers";
 import { AdapterDateFns } from "@mui/x-date-pickers/AdapterDateFns";
-import CheckBoxOutlineBlankIcon from "@mui/icons-material/CheckBoxOutlineBlank";
-import CheckBoxIcon from "@mui/icons-material/CheckBox";
 import io from "socket.io-client";
 import { category } from "../../lib/categories";
 import dayjs from "dayjs";
@@ -20,8 +18,6 @@ const type = [
   },
 ];
 
-const icon = <CheckBoxOutlineBlankIcon fontSize="small" />;
-const checkedIcon = <CheckBoxIcon fontSize="small" />;
 
 export default function Filter() {
   const [date, setDate] = React.useState(new Date(Date.now()));

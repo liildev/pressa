@@ -8,7 +8,6 @@ import "./_styles.scss";
 
 export default function Header() {
   const { user } = useSelector((state) => state.auth);
-  console.log(user.data.role);
 
   const Search = styled("div")(({ theme }) => ({
     position: "relative",
